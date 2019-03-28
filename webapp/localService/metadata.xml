@@ -1,0 +1,31 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZEMP_EV_FORM_SRV" xml:lang="en" sap:schema-version="1">
+            <EntityType Name="zemp_ev_form" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Zfmid"/>
+                </Key>
+                <Property Name="Zfmid" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Zuser" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Empno" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Personnel No." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Empname" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Dept" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Department" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Probfm" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Probation Period" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Probto" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Probation Period" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Desig" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Designation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Repmng" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Reporting Manger" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Datejo" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Probation Period" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZEMP_EV_FORM_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="zemp_ev_formSet" EntityType="ZEMP_EV_FORM_SRV.zemp_ev_form" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZEMP_EV_FORM_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZEMP_EV_FORM_SRV/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

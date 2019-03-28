@@ -1,0 +1,181 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="EmployeeEvaluation.controller.DPManager"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Confirmation Evaluation Form">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange480_Trial" maxContainerCols="3" editable="true" layout="ResponsiveGridLayout" title="Employee Information"
+							labelSpanXL="4" labelSpanL="4" labelSpanM="4" emptySpanXL="0" emptySpanL="0" emptySpanM="0" columnsXL="3" columnsL="2" columnsM="2"
+							class="editableForm">
+							<f:content>
+								<core:Title/>
+								<Label text="Form Id"/>
+								<Text text="{Zfmid}"/>
+								<Label text="Employee Id"/>
+								<Text text="{Empno}"/>
+								<Label text="Employee Name"/>
+								<Text text="{Empname}"/>
+								<Label text="Department"/>
+								<Text text="{Dept}"/>
+								<Label text="Probation PeriodFrom"/>
+								<Text text="{Probfm}"/>
+								<Label text="Probation PeriodTo"/>
+								<Text text="{Probto}"/>
+								<core:Title/>
+								<Label text="Designation"/>
+								<Text text="{Desig}"/>
+								<Label text="Reporting Manager"/>
+								<Text text="{Repmng}"/>
+								<Label text="Date of joining"/>
+								<Text text="{Datejo}"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<VBox>
+						<!--<ObjectListItem title="Quality of work"-->
+						<!--intro="fsdfxghnbzxczndnzkbx kb kbbkbkdkxhck gyjhgyjgyjg">-->
+						<!--	<attributes>-->
+						<!--	</attributes>-->
+						<!--</ObjectListItem>-->
+						<!--<ObjectListItem intro="Quality of work">-->
+						<!--	<attributes>-->
+						<!--	</attributes>-->
+						<!--</ObjectListItem>-->
+						<!--<ObjectListItem intro="Quality of work">-->
+						<!--	<attributes>-->
+						<!--	</attributes>-->
+						<!--</ObjectListItem>-->
+						<Table>
+							<columns>
+								<Column>
+									<Label text="Parameters"/>
+								</Column>
+								<Column>
+									<Label text="Rating"/>
+								</Column>
+								<Column>
+									<Label text="Justification"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Quality Of Work" text="Work is completed accurately and within deadlines"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Technical Competency" text="Applicatio of knowledge and skills needed to perform effectively in the job"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Communication" text="Communication is clear,effective and organized.(Written and oral comprehensive)"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Problem Solving"
+											text="Uses information from avariety of sources(Personal experience and observation) to idenfy options and solve problems"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Team Work"
+											text="collaborates in developing, implementing,evaluating and adjusting plans for self,team and org activities"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Customer Service" text="Providing excellence in service to internal and external customers"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<ObjectIdentifier title="Leadership" text="The ability to inspire others to work towards common goals by engaging and empowering teams"/>
+										<SegmentedButton>
+											<items>
+												<SegmentedButtonItem text="EE"/>
+												<SegmentedButtonItem text="ME"/>
+												<SegmentedButtonItem text="NI"/>
+												<SegmentedButtonItem text="UA"/>
+											</items>
+										</SegmentedButton>
+										<TextArea/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						<Toolbar>
+							<ToolbarSpacer/>
+							<Button type="Accept" text="Confirmation" press="onPress"/>
+							<Button type="Emphasized" text="Extended" press="onPress"/>
+							<Button type="Emphasized" text="PIP" press="onPress"/>
+						</Toolbar>
+					</VBox>
+				</content>
+				<footer>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button type="Accept" text="Submit" press="onPress"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
